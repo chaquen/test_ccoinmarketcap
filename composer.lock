@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f1915ec708986f5c88e22e683d74275",
-    "content-hash": "b7904d07d1e1765a0a199aa11d6301a3",
+    "hash": "1fb5a0cec72cdbcf69102d609faf88d0",
+    "content-hash": "2e7cf69666fb327b33f09f4a2250a597",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -687,6 +687,52 @@
                 "storage"
             ],
             "time": "2018-09-14 15:30:29"
+        },
+        {
+            "name": "mashape/unirest-php",
+            "version": "v3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mashape/unirest-php.git",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mashape/unirest-php/zipball/842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
+                "reference": "842c0f242dfaaf85f16b72e217bf7f7c19ab12cb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "0.1.*",
+                "phpunit/phpunit": "~4.4"
+            },
+            "suggest": {
+                "ext-json": "Allows using JSON Bodies for sending and parsing requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Unirest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Unirest PHP",
+            "homepage": "https://github.com/Mashape/unirest-php",
+            "keywords": [
+                "client",
+                "curl",
+                "http",
+                "https",
+                "rest"
+            ],
+            "time": "2016-08-11 17:49:21"
         },
         {
             "name": "monolog/monolog",
@@ -2239,6 +2285,52 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2017-11-27 11:13:29"
+        },
+        {
+            "name": "vittominacori/coinmarketcap-php",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vittominacori/coinmarketcap-php.git",
+                "reference": "c262a98516e77b6acd13822770cb10e0d65750b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vittominacori/coinmarketcap-php/zipball/c262a98516e77b6acd13822770cb10e0d65750b8",
+                "reference": "c262a98516e77b6acd13822770cb10e0d65750b8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "mashape/unirest-php": "^3.0",
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoinMarketCap\\": "src/lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vittorio Minacori",
+                    "homepage": "https://github.com/vittominacori"
+                }
+            ],
+            "description": "A PHP wrapper for CoinMarketCap API",
+            "homepage": "https://github.com/vittominacori/coinmarketcap-php",
+            "keywords": [
+                "client",
+                "coinmarketcap",
+                "crypto",
+                "exchange"
+            ],
+            "time": "2018-09-18 15:32:14"
         },
         {
             "name": "vlucas/phpdotenv",
