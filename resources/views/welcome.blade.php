@@ -10,6 +10,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
+        <script type="text/javascript" src="js/ajax.js"></script>
+
         <!-- Styles -->
         <style>
             html, body {
@@ -77,6 +79,21 @@
                 </div>
             @endif
 
+            <select>
+            @forelse  (json_decode($data) as $js)
+                <option value="{{$js->id}}">{{ $js->name." (".$js->symbol.")"}}</option>
+            @empty
+                <select>
+                    <option value="#">Ho hay datos</option>
+            @endforelse
+            </select>
+
+
+            <div>
+                <input type="button" onclick="loadDoc('test_guzzle_2')" value="cargar vista con ajax">
+            </div>
+            <div id="demo"></div>
+
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
@@ -91,5 +108,6 @@
                 </div>
             </div>
         </div>
+
     </body>
 </html>
